@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    height: 100vh;
+    padding: 30px;
+}
+
+main, #conteudo, #coluna1, #coluna2, #primeira_linha_coluna1, #primeira_linha_coluna2{
+    gap: 30px;
+}
+
+div, aside{
+    border-radius: 30px;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 20% 1fr;  /* Para os 20% + 80% + 30px de gap não dar rolagem de tela, deixar 20% + 1fr, assim a segunda coluna ocupa o restante do espaço disponivel sem estourar a tela */
+    height: 100%;
+}
+
+aside{
+    height: 100%;
+}
+
+#conteudo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#coluna1{
+    display: grid;
+    grid-template-rows: 200px 1fr 1fr;
+}
+
+#primeira_linha_coluna1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#coluna2{
+    display: grid;
+    grid-template-rows: 400px 1fr 1fr;
+}
+
+#primeira_linha_coluna2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

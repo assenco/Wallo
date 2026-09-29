@@ -1,0 +1,157 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imagens/fundo_login.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+    height: 100vh;
+    gap: 120px;
+}
+
+header{
+    margin: 30px 0px 0px 30px;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-height: 500px;
+    min-height: 0px;
+    width: 25%;
+    max-width: 500px;
+    min-width: 0px;
+    border: 1px solid rgba(37, 37, 37, 0.24);
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px rgba(37, 37, 37, 0.781);
+}
+
+main h1{
+    margin: 60px 0px 30px;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0px 0px 5px #1e1a33;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.formulario input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+input:-webkit-autofill,                         /*Este bloco foi feito por IA para corrigir o erro de autofill do google deixar um fundo branco no input*/
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: white;
+    caret-color: white;
+
+    -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.05) inset;
+    box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.05) inset;
+
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+.formulario input:focus{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+input:focus + hr {
+    background-color: #141122;
+}
+
+.formulario hr{
+    width: 100%;
+    margin: 0px 0px 10px;
+    height: 2px;
+    background-color: white;
+    border: none;
+    transition: 400ms;
+}
+
+.acoes_formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 80%;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.btn_login{
+    width: 60%;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid white;
+    background-color: transparent;
+    transition: 200ms;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    box-shadow: 0px 0px 8px #241f3d83;
+}
+
+.btn_login:hover{
+    background-color: #141122;
+    border-color: #141122;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.btn_login:active{
+    background-color: #48445a;
+    border-color: #48445a;
+    color: white;
+    font-size: 16px;
+}
+
+.link_cadastro{
+    color: #adacb1ef;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.link_cadastro:hover{
+    color: #686672;
+}
