@@ -131,7 +131,7 @@ function proximaPergunta() {
 
             alert("Questionário concluído!")
 
-            window.location.href = "home.html"
+            window.location.href = "index.html"
 
         }
 
