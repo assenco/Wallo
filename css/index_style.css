@@ -14,15 +14,18 @@ body{
     gap: 120px;
 }
 
+/*Header onde esta a logo*/
 header{
     margin: 30px 0px 0px 30px;
 }
 
+/*Imagem logo*/
 .logo{
     width: 200px;
     height: auto;
 }
 
+/*Div do conteudo principal*/
 main{
     display: flex;
     flex-direction: column;
@@ -48,6 +51,7 @@ main h1{
     text-shadow: 0px 0px 5px #1e1a33;
 }
 
+/*Div do input de email e senha*/
 .formulario{
     display: flex;
     flex-direction: column;
@@ -55,6 +59,7 @@ main h1{
     width: 80%;
 }
 
+/*Inputs de email e senha*/
 .formulario input{
     width: 100%;
     height: 40px;
@@ -64,7 +69,8 @@ main h1{
     font-size: 20px;
 }
 
-input:-webkit-autofill,                         /*Este bloco foi feito por IA para corrigir o erro de autofill do google deixar um fundo branco no input*/
+/*Este bloco foi feito por IA para corrigir o erro de autofill do google deixar um fundo branco no input*/
+input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
@@ -77,28 +83,17 @@ input:-webkit-autofill:active {
     transition: background-color 9999s ease-in-out 0s;
 }
 
-.formulario input:focus{
-    width: 100%;
-    height: 40px;
-    border: none;
-    background-color: transparent;
-    color: white;
-    font-size: 20px;
-}
-
 input::placeholder {
     color: white;
 }
 
+/*Muda estilo do input quando selecionado*/
 input:focus {
     outline: none;
     border: none;
 }
 
-input:focus + hr {
-    background-color: #141122;
-}
-
+/*Linha abaixo de cada input*/
 .formulario hr{
     width: 100%;
     margin: 0px 0px 10px;
@@ -108,6 +103,12 @@ input:focus + hr {
     transition: 400ms;
 }
 
+/*Muda estilo da linha hr quando selecionado*/
+input:focus + hr {
+    background-color: #141122;
+}
+
+/*Div de botao de login e link de cadastro*/
 .acoes_formulario{
     display: flex;
     flex-direction: column;
@@ -118,6 +119,7 @@ input:focus + hr {
     margin-bottom: 15px;
 }
 
+/*Botão de login*/
 .btn_login{
     width: 60%;
     height: 40px;
@@ -139,6 +141,7 @@ input:focus + hr {
     font-weight: 600;
 }
 
+/*Muda estilo do botao enquanto pressionado*/
 .btn_login:active{
     background-color: #48445a;
     border-color: #48445a;
@@ -146,6 +149,7 @@ input:focus + hr {
     font-size: 16px;
 }
 
+/*Link de pagina cadastro*/
 .link_cadastro{
     color: #adacb1ef;
     text-decoration: none;

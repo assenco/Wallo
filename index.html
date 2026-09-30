@@ -3,76 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DashBoard</title>
+    <title>Login</title>
 
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/responsive_index_style.css" media="screen">
 </head>
 <body>
+    <header>
+        <img src="imagens/logo2.png" class="logo">
+    </header>
     <main>
-
-        <aside id="menu"> <!-- Menu -->
-
-            <div id="logo"> <!-- Logo -->
-                a
-            </div>
-
-        </aside>
-
-
-        <section id="conteudo"> <!-- Conteudo -->
-
-            <div id="coluna1"> <!-- Coluna Esquerda -->
-
-                <div id="primeira_linha_coluna1"> <!-- Primeira Linha Coluna Esquerda -->
-                    
-                    <div id="saldo"> <!-- Saldo -->
-                        saldo
-                    </div>
-
-                    <div id="despesas"> <!-- Despesas -->
-                        despesas
-                    </div>
-
-                </div>
-
-                <div id="segunda_linha_coluna1"> <!-- Segunda Linha Coluna Esquerda -->
-                    grafico 3
-                </div>
-
-                <div id="terceira_linha_coluna1"> <!-- Terceira Linha Coluna Esquerda -->
-                    grafico 5
-                </div>
-
-            </div>
-
-
-            <div id="coluna2"> <!-- Coluna Direita -->
-
-                <div id="primeira_linha_coluna2"> <!-- Primeira Linha Coluna Direita -->
-                    
-                    <div id="grafico1"> <!-- Grafico 1 -->
-                        grafico 1
-                    </div>
-
-                    <div id="grafico2"> <!-- Grafico 2 -->
-                        grafico 2
-                    </div>
-
-                </div>
-
-                <div id="segunda_linha_coluna2"> <!-- Segunda Linha Coluna Direita -->
-                    grafico 4
-                </div>
-
-                <div id="terceira_linha_coluna2"> <!-- Terceira Linha Coluna Direita -->
-                grafico 6
-                </div>
-
-            </div>
-
-        </section>
-
+        <h1>Entrar</h1>
+        <div class="formulario">
+            <input id="input_email" type="text" placeholder="E-mail">
+            <hr>
+            <input id="input_senha" type="password" placeholder="Senha">
+            <hr>
+        </div>
+        <div class="acoes_formulario">
+            <button id="btn_login" class="btn_login">Login</button>
+            <a href="cadastro.html" class="link_cadastro">Não possui conta?</a>
+        </div>
     </main>
 
+    <script src="js/index_script.js"></script>
 </body>
 </html>

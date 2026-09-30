@@ -25,7 +25,7 @@
 @media (max-width: 1000px) {
 
     .logo{
-    width: 150px;
+        width: 150px;
     }
 
     body{
@@ -64,7 +64,7 @@
     }
 
     .div_botao_login{
-    margin: 40px 0px 20px;
+        margin: 40px 0px 20px;
     }
 
     .botao_login{
@@ -74,12 +74,12 @@
     }
 
     .botao_login:hover{
-    font-size: 16px;
+        font-size: 16px;
     }
 
     .link_cadastro{
-    font-size: 11px;
-    color: rgba(116, 116, 116, 0.705);
+        font-size: 11px;
+        color: rgba(116, 116, 116, 0.705);
     }
 
 }

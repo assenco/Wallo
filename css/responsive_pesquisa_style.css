@@ -8,9 +8,9 @@
     }
 
     .opcoes button{
-    width: 80%;
-    min-height: 50px;
-    font-size: 18px;
+        width: 80%;
+        min-height: 50px;
+        font-size: 18px;
     }
 
 }
@@ -22,9 +22,9 @@
     }
 
     #botao_comecar{
-    min-height: 60px;
-    margin: 0px 0px 50px;
-    font-size: 20px;
+        min-height: 60px;
+        margin: 0px 0px 50px;
+        font-size: 20px;
     }
 
 }
@@ -36,14 +36,14 @@
     }
 
     #botao_comecar{
-    min-height: 30px;
-    margin: 0px 0px 50px;
-    font-size: 17px;
+        min-height: 30px;
+        margin: 0px 0px 50px;
+        font-size: 17px;
     }
 
     .opcoes button{
-    width: 80%;
-    min-height: 50px;
-    font-size: 15px;
+        width: 80%;
+        min-height: 50px;
+        font-size: 15px;
     }
 }

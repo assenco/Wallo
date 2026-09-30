@@ -13,6 +13,7 @@ body{
     gap: 100px;
 }
 
+/*Div do conteudo principal*/
 main{
     display: flex;
     flex-direction: column;
@@ -36,6 +37,20 @@ main h1{
     text-shadow: 0px 0px 5px #1e1a33;
 }
 
+/*Transição da troca entre telas*/
+#conteudo {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/*Transição da troca entre telas*/
+#conteudo.saindo {
+    opacity: 0;
+    transform: translateY(5px);
+}
+
+/*Botao de começar na primeira tela*/
 #botao_comecar{
     width: 70%;
     min-height: 70px;
@@ -65,6 +80,7 @@ main h1{
     color: white;
 }
 
+/*Div das respostas para as perguntas de cada tela*/
 .opcoes{
     display: flex;
     flex-direction: column;
@@ -73,6 +89,7 @@ main h1{
     padding-bottom: 40px;
 }
 
+/*Botao de cada resposta*/
 .opcoes button{
     width: 80%;
     min-height: 70px;
@@ -99,15 +116,4 @@ main h1{
     background-color: #2724317c;
     border-color: #17151db6;
     color: white;
-}
-
-#conteudo {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-#conteudo.saindo {
-    opacity: 0;
-    transform: translateY(5px);
 }
