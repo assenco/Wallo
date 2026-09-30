@@ -5,6 +5,7 @@
 body{
     display: flex;
     flex-direction: column;
+    background-color: #141122;
     background-image: url(../imagens/fundo_login.jpg);
     background-size: cover;
     background-position: center;

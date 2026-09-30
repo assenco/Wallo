@@ -5,6 +5,7 @@
 body{
     display: flex;
     flex-direction: column;
+    background-color: #141122;
     background-image: url(../imagens/fundo_login.jpg);
     background-size: cover;
     background-position: center;
@@ -67,6 +68,20 @@ main h1{
     background-color: transparent;
     color: white;
     font-size: 18px;
+}
+
+/*Este bloco foi feito por IA para corrigir o erro de autofill do google deixar um fundo branco no input*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: white;
+    caret-color: white;
+
+    -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.05) inset;
+    box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.05) inset;
+
+    transition: background-color 9999s ease-in-out 0s;
 }
 
 input::placeholder {
