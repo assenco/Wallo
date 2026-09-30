@@ -100,15 +100,72 @@ const grafico2 = document.getElementById('grafico2');
 
 new Chart(grafico2, config2);
 
-//Grafico de linhas | grafico 6
-const data6 = {
+//Grafico colunas | grafico 5
+const data5 = {
     labels: [
         'Janeiro',
         'Fevereiro',
         'Março',
         'Abril',
         'Maio',
-        'Junho'
+        'Junho',
+        'Julho'
+    ],
+
+    datasets: [
+        {
+            label: 'Valor Poupado',
+            data: [2000, 2500, 2200, 2800, 3000, 2700, 3200],
+
+            backgroundColor: 'rgba(43, 255, 0, 0.5)',
+            borderColor: 'rgb(43, 255, 0)',
+
+            type: 'bar'
+        },
+
+        {
+            label: 'Meta',
+            data: [1500, 1800, 1700, 2100, 2300, 2000, 2400],
+
+            backgroundColor: 'rgba(255, 99, 132, 0.5)',
+            borderColor: 'rgb(255, 99, 132)',
+
+            type: 'line'
+        }
+    ]
+};
+
+const config5 = {
+    type: 'bar',
+
+    data: data5,
+
+    options: {
+        responsive: true,
+
+        plugins: {
+            legend: {
+                display: true,
+                position: 'top'
+            }
+        }
+    }
+};
+
+const grafico5 = document.getElementById('grafico5');
+
+new Chart(grafico5, config5);
+
+//Grafico de linhas | grafico 6
+const data6 = {
+    labels: [
+    'Janeiro',
+    'Fevereiro',
+    'Março',
+    'Abril',
+    'Maio',
+    'Junho',
+    'Julho'
     ],
 
     datasets: [
