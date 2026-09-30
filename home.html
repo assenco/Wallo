@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DashBoard</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/home_style.css">
 </head>
 <body>
@@ -26,12 +30,14 @@
 
                 <div id="primeira_linha_coluna1"> <!-- Primeira Linha Coluna Esquerda -->
                     
-                    <div id="saldo"> <!-- Saldo -->
-                        saldo
+                    <div id="bloco1_coluna1"> <!-- Saldo -->
+                        <h2>Saldo</h2>
+                        <p>R$ 2000</p>
                     </div>
 
-                    <div id="despesas"> <!-- Despesas -->
-                        despesas
+                    <div id="bloco2_coluna1"> <!-- Despesas -->
+                        <h2>Despesas</h2>
+                        <p>R$ 1000</p>
                     </div>
 
                 </div>
@@ -51,12 +57,14 @@
 
                 <div id="primeira_linha_coluna2"> <!-- Primeira Linha Coluna Direita -->
                     
-                    <div id="grafico1"> <!-- Grafico 1 -->
-                        grafico 1
+                    <div id="bloco1_coluna2"> <!-- Grafico 1 -->
+                        <h2>Despesas do Mês</h2>
+                        <canvas id="grafico1"></canvas>
                     </div>
 
-                    <div id="grafico2"> <!-- Grafico 2 -->
-                        grafico 2
+                    <div id="bloco2_coluna2"> <!-- Grafico 2 -->
+                        <h2>Despesas do Ano</h2>
+                        <canvas id="grafico2"></canvas>
                     </div>
 
                 </div>
@@ -66,7 +74,7 @@
                 </div>
 
                 <div id="terceira_linha_coluna2"> <!-- Terceira Linha Coluna Direita -->
-                grafico 6
+                    <canvas id="grafico6"></canvas>
                 </div>
 
             </div>
@@ -75,5 +83,8 @@
 
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="js/home_script.js"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 body{
@@ -34,7 +35,7 @@ aside{
 
 #coluna1{
     display: grid;
-    grid-template-rows: 200px 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
 }
 
 #primeira_linha_coluna1{
@@ -42,12 +43,42 @@ aside{
     grid-template-columns: repeat(2, 1fr);
 }
 
+#primeira_linha_coluna1 div{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(117, 117, 117);
+    gap: 20px;
+}
+
+#primeira_linha_coluna1 h2{
+    text-align: left;
+    padding-left: 30px;
+    margin: 20px 0px 0px;
+}
+
+#primeira_linha_coluna1 p{
+    text-align: left;
+    padding-left: 40px;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0px 0px 20px;
+}
+
 #coluna2{
     display: grid;
-    grid-template-rows: 400px 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
 }
 
 #primeira_linha_coluna2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+#bloco1_coluna2, #bloco2_coluna2{
+    padding: 10px;
+    background-color: rgb(124, 124, 124);
+}
+#bloco1_coluna2 h2, #bloco2_coluna2 h2{
+    padding-left: 10px;
+    margin: 0px;
+    text-align: left;
 }
