@@ -69,11 +69,11 @@
     .btn_login{
         width: 50%;
         height: 30px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .btn_login:hover{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .link_cadastro{
